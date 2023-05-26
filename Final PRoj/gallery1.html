@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who Am I?</title>
+	<link rel="stylesheet" type="text/css" href="stylegallery.css">
+</head>
+<style>
+   #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+<body>
+  <nav class="navbar">
+    <img class="logo" src="logoko.png">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="#Gallery">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div class="heading">
+      <h3>Photo <span>Gallery</span></h3>
+    </div>
+    <div class="box">
+      
+      <div class="layout">
+         <img src="pic20.jpg">
+          <img src="place13.jpg">
+              <img src="pic22.jpg">
+              <img src="f1.jpg">
+              <img src="place3.jpg">
+            <img src="place4.jpg">
+            <img src="pic67.jpg">
+           <img src="place1.jpg">
+              <img src="place2.jpg">
+              <img src="pic23.jpg">
+              <img src="pic24.jpg">
+              <img src="f2.jpg">
+              <img src="pic25.jpg">
+              <img src="pic26.jpg">
+              <img src="pic27.jpg">
+              <img src="pic28.jpg">
+              <img src="pic29.jpg">
+              <img src="pic30.jpg">
+              <img src="pic31.jpg">
+              <img src="pic32.jpg">
+              <img src="pic33.jpg">
+              
+              <img src="pic35.jpg">
+              
+              <img src="pic38.jpg">
+              <img src="pic40.jpg">
+              
+              
+
+           
+           
+      </div>
+
+        <div class="layout">
+        <img src="pic4.jpg">
+              <img src="pic5.jpg">
+              <img src="pic6.jpg">
+              <img src="pic7.jpg">
+              <img src="place9.jpg">
+              <img src="place10.jpg">
+              <img src="place11.jpg">
+              <img src="place12.jpg">
+              <img src="pic10.jpg">
+              <img src="pic12.jpg">
+              <img src="f3.jpg">
+              <img src="f4.jpg">
+              <img src="f5.jpg">
+              <img src="pic19.jpg">
+              <img src="pic65.jpg">
+              <img src="pic66.jpg">
+              <img src="pic14.jpg">
+              <img src="pic15.jpg">
+               <img src="place5.jpg">
+              <img src="place6.jpg">
+              <img src="place7.jpg">
+              <img src="place8.jpg">
+              <img src="pic17.jpg">
+              <img src="pic18.jpg">
+               <img src="pic34.jpg">
+             <img src="pic41.jpg">
+              
+              
+            
+              
+            
+      </div>
+
+        <div class="layout">
+              
+             
+             
+              <img src="f6.jpg">
+              <img src="f7.jpg">
+              <img src="pic47.jpg">
+              <img src="pic48.jpg">
+              <img src="pic49.jpg">
+              <img src="pic42.jpg">
+              <img src="pic43.jpg">
+              <img src="pic50.jpg">
+              <img src="pic51.jpg">
+              <img src="pic54.jpg">
+              <img src="pic55.jpg">
+              <img src="pic57.jpg">
+              <img src="pic58.jpg">
+              <img src="pic59.jpg">
+              <img src="pic60.jpg">
+              <img src="pic61.jpg">
+              <img src="pic62.jpg">
+              <img src="pic63.jpg">
+              <img src="pic64.jpg">
+              <img src="pic36.jpg">
+              <img src="pic37.jpg">
+               <img src="pic45.jpg">
+              <img src="pic46.jpg">
+             
+              
+      </div>
+
+
+
+
+    <button id="backToTop">Back to Top</button>
+
+  <script>
+    
+    // Function to scroll to the top of the page
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // Show/hide the back to top button based on scroll position
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("backToTop").style.display = "block";
+    } else {
+      document.getElementById("backToTop").style.display = "none";
+    }
+  };
+
+  // Attach click event listener to the back to top button
+  document.getElementById("backToTop").addEventListener("click", scrollToTop);
+  </script>
+</body>
+</html>

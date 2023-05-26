@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact</title>
+      <link rel="stylesheet" href="styles3.css">
+      <script src="https://kit.fontawesome.com/5d857dd618.js"></script>
+     <script>
+         function copyPhoneNumber() {
+            var phoneNumber = '+639562541435';
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', phoneNumber);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            var confirmation = confirm('Phone number copied: ' + phoneNumber);
+
+            if (confirmation) {
+               // Redirect to contact.html
+               window.location.href = 'contact.html';
+            }
+         }
+      </script>
+      <style>
+         body {
+            background-image: url('bgcontact.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+         }
+
+         
+      </style>
+
+   </head>
+   <body>
+      <nav class="navbar">
+         <img class="logo" src="logoko.png">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery1.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="#Contact">Contact</a></li>
+         </ul>
+      </nav>
+     <div class="wrapper">
+      <div class="icon facebook">
+         <div class="tooltip">
+            Facebook
+         </div>
+         <a href="https://www.facebook.com/kebrej.rempis" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
+      </div>
+      <div class="icon instagram">
+         <div class="tooltip">
+            Instagram
+         </div>
+         <a href="https://www.instagram.com/nebredge/?igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR1gnth9bnirVT2sRDxFARzuco9nG63UWp3-QDx7SA3_H2LzNza0XeIA-zk" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+      </div>
+      <div class="icon tiktok">
+         <div class="tooltip">
+            Tiktok
+         </div>
+         <a href="https://www.tiktok.com/@nebrejj?is_from_webapp=1&sender_device=pc" target="_blank"><span><i class="fab fa-tiktok"></i></span></a>
+      </div>
+      <div class="icon gmail">
+         <div class="tooltip">
+            Google mail
+         </div>
+         <a href="mailto:benj.nebrej@gmail.com" target="_blank"><span><i class="fa fa-envelope"></i></span></a>
+      </div>
+         <div class="icon phone">
+            <div class="tooltip">
+               Phone
+            </div>
+           <a href="javascript:void(0);" onclick="copyPhoneNumber()"><span><i class="fa fa-phone"></i></span></a>
+         </div>
+      </div>
+   </body>
+</html>
